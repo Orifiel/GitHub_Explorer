@@ -1,30 +1,17 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import './App.css';
+import GlobalStyle from './styles/global';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+import Routes from './routes';
 
-        <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+// eslint-disable-next-line
+const App: React.FC = () => (
+  <>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+    <GlobalStyle />
+  </>
+);
 export default App;
