@@ -1,6 +1,6 @@
 # GitHub_Explorer
 <h2>
-Projeto Aula do Bootcamp sobre React. 
+Projeto Aula do Bootcamp sobre React.
 </h2>
 Conceitos abordados até o momento:
 
