@@ -45,22 +45,48 @@ export const Form = styled.form`
 `;
 
 export const Repositories = styled.form`
+  max-width: 700px;
+  margin-top: 80px;
   a {
-    max-width: 700px;
-    height: 110px;
     display: flex;
-    position: relative;
-  }
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    padding: 24px;
+    text-decoration: none;
+    align-items: center;
+    transition: transform 0.3s;
 
-  img {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 16px;
-    left: 16px;
-  }
+    & + a {
+      margin-top: 20px;
+    }
 
-  div {
-    position: absolute;
+    &:hover {
+      transform: translateX(10px);
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+
+    div {
+      margin-left: 16px;
+      strong {
+        font-size: 24px;
+        color: #3a3a3a;
+      }
+      p {
+        font-size: 18px;
+        color: #3d3d4d;
+        margin-top: 4px;
+      }
+    }
+    svg {
+      margin-left: auto;
+      color: #c9c9d4;
+    }
   }
 `;
